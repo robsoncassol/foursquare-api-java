@@ -176,8 +176,8 @@
 	</reporting>
 
 	<scm>
-		<connection>scm:git:git@github.com/gaugers/monitoring.git</connection>
-		<developerConnection>scm:git:git@github.com:gaugers/monitoring.git</developerConnection>
+		<connection>scm:git:git@github.com/robsoncassol/foursquare-api-java.git</connection>
+		<developerConnection>scm:git:git@github.com:robsoncassol/foursquare-api-java.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
