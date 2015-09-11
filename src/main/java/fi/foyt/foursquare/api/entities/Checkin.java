@@ -196,4 +196,5 @@ public class Checkin implements FoursquareEntity {
             ", overlaps=" + overlaps +
             '}';
   }
+
 }

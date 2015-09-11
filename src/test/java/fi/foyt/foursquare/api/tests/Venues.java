@@ -2,6 +2,7 @@ package fi.foyt.foursquare.api.tests;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import fi.foyt.foursquare.api.FoursquareApi;
@@ -54,6 +55,7 @@ public class Venues {
   }
 
   @Test
+  @Ignore
   public final void testVenueSpecials() throws FoursquareApiException {
     FoursquareApi foursquareApi = TestUtils.getAnonymousFoursquareApi();
     
@@ -74,6 +76,7 @@ public class Venues {
   }
   
   @Test
+  @Ignore
   public final void testVenuesAdd() throws FoursquareApiException {
     FoursquareApi foursquareApi = TestUtils.getAuthenticatedFoursquareApi();
     
@@ -220,6 +223,7 @@ public class Venues {
   }
   
   @Test
+  @Ignore
   public final void testVenuesExplore() throws FoursquareApiException {
     FoursquareApi foursquareApi = TestUtils.getAnonymousFoursquareApi();
     Result<Recommended> result = foursquareApi.venuesExplore("40.7,-74", null, null, null, null, null, null, null, null);

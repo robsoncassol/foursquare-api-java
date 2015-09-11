@@ -178,6 +178,7 @@ public class CompactVenue implements FoursquareEntity {
   protected Integer rating;
   protected SpecialGroup specials;
   protected HereNow hereNow;
+  private String todos;
   
   // TODO
   protected String page;

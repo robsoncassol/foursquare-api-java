@@ -176,6 +176,7 @@ public class CompleteVenue extends CompactVenue {
   private Boolean like;
   private Boolean dislike;
   private String timeZone;
+  private String todos;
   
   // TODO
   private String reasons;
