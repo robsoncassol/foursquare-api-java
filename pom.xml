@@ -89,18 +89,6 @@
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.8.2</version>
-				<dependencies>
-					<dependency>
-						<groupId>com.google.code.maven-svn-wagon</groupId>
-						<artifactId>maven-svn-wagon</artifactId>
-						<version>1.4</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
 				<version>2.4</version>
 				<executions>
@@ -130,13 +118,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<extensions>
-			<extension>
-				<groupId>com.google.code.maven-svn-wagon</groupId>
-				<artifactId>maven-svn-wagon</artifactId>
-				<version>1.4</version>
-			</extension>
-		</extensions>
+		
 	</build>
 
 	<profiles>
@@ -193,18 +175,18 @@
 		</plugins>
 	</reporting>
 
-	<issueManagement>
-		<url>https://code.google.com/p/foursquare-api-java/issues/</url>
-		<system>Google Code</system>
-	</issueManagement>
 	<scm>
-		<url>http://foursquare-api-java.googlecode.com/svn/</url>
-		<developerConnection>scm:svn:https://foursquare-api-java.googlecode.com/svn/trunk</developerConnection>
+		<connection>scm:git:git@github.com/gaugers/monitoring.git</connection>
+		<developerConnection>scm:git:git@github.com:gaugers/monitoring.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
+
 	<organization>
 		<name>Foyt</name>
 		<url>http://www.foyt.fi</url>
 	</organization>
+
 	<url>http://foursquare-api-java.googlecode.com/</url>
 	<description>Foursquare V2 API for Java</description>
+	
 </project>
