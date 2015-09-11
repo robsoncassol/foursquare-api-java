@@ -3,7 +3,7 @@
 	<groupId>fi.foyt</groupId>
 	<artifactId>foursquare-api</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<name>Foursquare API</name>
 	<licenses>
 		<license>
@@ -176,6 +176,7 @@
 	</reporting>
 
 	<scm>
+		<url>https://github.com/robsoncassol/foursquare-api-java</url>
 		<connection>scm:git:git@github.com/robsoncassol/foursquare-api-java.git</connection>
 		<developerConnection>scm:git:git@github.com:robsoncassol/foursquare-api-java.git</developerConnection>
 		<tag>HEAD</tag>
