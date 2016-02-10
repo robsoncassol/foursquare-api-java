@@ -235,33 +235,6 @@ public class Users {
     assertEquals(new Integer(1), result.getResult().getItems()[0].getRank());
   }
   
-  @Test
-  public final void testUsersBadges() throws FoursquareApiException {
-    FoursquareApi foursquareApi = TestUtils.getAuthenticatedFoursquareApi();
-    Result<Badges> result = foursquareApi.usersBadges("self");
-    
-    assertEquals(new Integer(200), result.getMeta().getCode());
-    assertEquals("all", result.getResult().getSets().getGroups()[0].getType());
-    assertEquals("all badges", result.getResult().getSets().getGroups()[0].getName());
-    assertEquals("https://foursquare.com/img/badge/", result.getResult().getSets().getGroups()[0].getImage().getPrefix());
-    assertArrayEquals(new Integer[] {24, 32, 48, 64}, result.getResult().getSets().getGroups()[0].getImage().getSizes());
-    assertEquals("/allbadges.png", result.getResult().getSets().getGroups()[0].getImage().getName());
-    assertArrayEquals(new String[] {"4de4762d52b1d38d299e6008"}, result.getResult().getSets().getGroups()[0].getItems());
-    assertEquals(0, result.getResult().getSets().getGroups()[0].getGroups().length);
-    assertEquals("4c4f08667a0803bbde202ab7", result.getResult().getBadges()[0].getId());
-    assertEquals("4c4f08667a0803bbde202ab7", result.getResult().getBadges()[0].getBadgeId());
-    assertEquals("Jobs", result.getResult().getBadges()[0].getName());
-    assertEquals("Here's the silver lining to breaking your iPhone 3 times. ", result.getResult().getBadges()[0].getHint()); 
-    assertEquals("https://playfoursquare.s3.amazonaws.com/badge/", result.getResult().getBadges()[0].getImage().getPrefix());
-    assertArrayEquals(new Integer[] {57, 114, 200, 300, 400}, result.getResult().getBadges()[0].getImage().getSizes());
-    assertEquals("/default_off.png", result.getResult().getBadges()[0].getImage().getName());
-    assertEquals(0, result.getResult().getBadges()[0].getUnlocks().length);
-    assertEquals("4sq", result.getResult().getDefaultSetType());
-    
-    assertEquals("4de4762d52b1d38d299e6000", result.getResult().getBadges()[26].getUnlocks()[0].getCheckins()[0].getId());
-    Result<Badges> result2 = foursquareApi.usersBadges(null);
-    assertEquals(result.getResult().getBadges()[0].getId(), result2.getResult().getBadges()[0].getId());
-  }
   
   @Test
   public final void testUsersTips() throws FoursquareApiException {
